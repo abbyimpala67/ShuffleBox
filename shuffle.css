@@ -1,0 +1,121 @@
+.outer-container {
+  width: 73%;
+  height: 470px;
+  background-color: #efefef;
+}
+
+.header {
+  width: 35%;
+  text-align: center;
+}
+
+.grid-container {
+  width: 450px;
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 120px 120px 120px;
+  background-color: #bfbfbf;
+  padding: 1px;
+  float: left;
+}
+.grid-item {
+  padding: 10px;
+  font-size: 100px;
+  text-align: center;
+  color: white;
+}
+
+.grid-item.three,
+.grid-item.five,
+.grid-item.nine {
+  background-color: #2f454e;
+}
+
+.grid-item.two,
+.grid-item.four {
+  background-color: #2b8ead;
+}
+
+.grid-item.one {
+  background-color: rgba(90, 141, 162, 0.8);
+}
+
+.grid-item.four {
+  background-color: #bfbfbf;
+}
+
+.btn {
+  width: 13%;
+  height: 31px;
+  border-radius: 10px;
+  background-color: #72c3dc;
+  box-shadow: 0 5px #2b8ead;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.shuffle-btn {
+  margin: 16px 0 0 2%;
+}
+.btn.sort-btn {
+  float: left;
+  margin: 20px 0 0 2%;
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-color: black;
+  }
+
+  .outer-container {
+    width: 0%;
+  }
+  .header {
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    position: relative;
+  }
+
+  .grid-container {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 99%;
+    grid-template-rows: 0%;
+    background-color: white;
+    padding: 16% 0 12% 1%;
+    float: left;
+    position: absolute;
+  }
+
+  .grid-item {
+    padding: 4%;
+    background-color: #efefef;
+    border: 1px solid white;
+    font-size: 10px;
+    text-align: center;
+    color: black;
+  }
+  .btn {
+    width: 13%;
+    height: 31px;
+    border-radius: 10px;
+    background-color: #72c3dc;
+    box-shadow: 0 5px #2b8ead;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .btn.shuffle-btn {
+    margin: 14pt 0 0 67pt;
+    position: absolute;
+    width: 25%;
+  }
+  .btn.sort-btn {
+    margin: 0px 0 0 148pt;
+    position: absolute;
+    width: 25%;
+  }
+}
